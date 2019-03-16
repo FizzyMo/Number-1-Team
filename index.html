@@ -1,114 +1,97 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
+
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../Number-1-Team/style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
-    <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
     <title>Document</title>
+
 </head>
+
+
 
 <body>
 
+
+
     <heading id="heading">
+
         <h1>Research Your News Article's <em>Editorial Approach</em></h1>
+
     </heading>
+
     <div class="field has-addons">
+
         <div class="control">
+
             <input class="input" type="text" placeholder="Search for a topic here">
+
             <button id="add-article">SUBMIT!</button>
+
         </div>
+
+
+
 
 
         <table id="info">
 
             <tr>
+
                 <th>Source</th>
+
                 <th>Link</th>
+
                 <th>Tone</th>
+
             </tr>
-
-            <tr>
-                <td id="source"></td>
-                <td id="link"></td>
-                <td id="tone"></td>
-            </tr>
-
-        </table>
-
-        <table id="article">
-
-            <tr>
-                <th>Article Text</th>
-            </tr>
-
-            <tr>
-                <td id="text"></td>
-            </tr>
-
         </table>
 
         <div class="footer">
+
             <p>We are web developers in the making. This is our group first project: Max, Carisa, Telahoun, Chris.</p>
+
             <p> University of Arizona Coding Bootcamp. 2019</p>
+
             <hr>
+
             <br>
+
             <a class="portfolio" href="https://maxjcoder.github.io/Basic-Portfolio/" target="_blank">Max</a>
+
             <a class="portfolio" href="https://maxjcoder.github.io/Basic-Portfolio/" target="_blank">Carisa</a>
+
             <a class="portfolio" href="https://maxjcoder.github.io/Basic-Portfolio/" target="_blank">Telahoun</a>
+
             <a class="portfolio" href="https://maxjcoder.github.io/Basic-Portfolio/" target="_blank">Chris</a>
+
             <br>
+
             <br>
+
         </div>
 
-<script type="text/javascript">
-$('#add-article').on('click', function (event) {
-    console.log("add article clicked'")
-    event.preventDefault;
-
-    var linkName = $("#link").val().trim();
-    var sourceName = $("#source").val().trim();
-    var toneName = $("#tone").val().trim();
-    var articleName = $("#article").val().trim();
-
-    // database.ref().push({
-    //   url: "https://newsapi.org/v2/everything?domains=wsj.com,nytimes.com&apiKey=496e966f5c324e3080abd07b9111c5c3"
-    // })
-    var url = "https://newsapi.org/v2/everything?domains=wsj.com,nytimes.com&apiKey=496e966f5c324e3080abd07b9111c5c3"
-    // var req = new Request(url);
-    // fetch(req)
-    //   .then(function (response) {
-
-    //   })
-
-    $.ajax({
-      url: url,
-      method: "GET"})
-        .then(function (response) {
-            console.log(response)
-          var newsDiv = $("<div class=''>");
-          var description = response.articles[0].description;
-          var content = $("<p>").text("description" + description);
-          newsDiv.append(content);
 
 
-
-        })
-
-
-    
-
-
-
-  });
-</script>
+        <script src="javascript/app.js"></script>
 
 </body>
+
+
 
 </html>
