@@ -16,6 +16,8 @@
 
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
@@ -31,15 +33,27 @@
 
     <heading id="heading">
 
-        <h1>Research Your News Article's <em>Editorial Approach</em></h1>
 
     </heading>
+    <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle btn btn-info" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Creators
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="https://maxjcoder.github.io/Basic-Portfolio/" target="_blank" >Max Jackson</a>
+          <a class="dropdown-item" href="https://cwbabis.github.io/" target="_blank" >Chris Babis</a>
+          <a class="dropdown-item" href="#" target="_blank" >Carisa Saenz-Videtto</a>
+          <a class="dropdown-item" href="https://tmolla.github.io/Bootstrap-Portfolio/" target="_blank" >Telahoun Molla</a>
+        </div>
+      </div>
+
+      <h1>New York Time Trending News <em>Editorial Approach</em></h1>
+
 
     <div class="field has-addons">
 
         <div class="control">
-
-            <input class="input" type="text" placeholder="Search for a topic here">
 
             <button id="add-article">SUBMIT!</button>
 
@@ -59,15 +73,11 @@
             </tr>
         </table>
 
-        <div class="footer">
+        <footer class="fixed-bottom">
 
             <p>We are web developers in the making. This is our group first project: Max, Carisa, Telahoun, Chris.</p>
 
             <p> University of Arizona Coding Bootcamp. 2019</p>
-
-            <hr>
-
-            <br>
 
             <a class="portfolio" href="https://maxjcoder.github.io/Basic-Portfolio/" target="_blank">Max</a>
 
@@ -76,16 +86,18 @@
             <a class="portfolio" href="https://maxjcoder.github.io/Basic-Portfolio/" target="_blank">Telahoun</a>
 
             <a class="portfolio" href="https://maxjcoder.github.io/Basic-Portfolio/" target="_blank">Chris</a>
+        </footer>
 
-            <br>
-
-            <br>
 
         </div>
 
 
 
         <script src="javascript/app.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 
