@@ -1,15 +1,75 @@
+
+.jumbotron{
+    /*background-image: url("../newspaper.jpeg") !important;
+    background-repeat: no-repeat;
+    background-size:cover;*/
+    opacity: 0.9;
+    background-color:#00FFFF !important;
+    background: wheat !important /* linear-gradient(to top, white, Wheat) !important;*/
+}
+/*.container{
+    background-image:url("../newspaper.jpeg")
+}*/
+.membersDiv{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-right: auto; 
+    margin-left:auto;
+}
+.members{
+    border-right:1px solid black; 
+    padding-right:3px; 
+    margin-right:3px;
+}
+.copyright{
+    float:left;
+    margin-right:5px;
+}
+.card{
+    /*opacity: 0.9;
+    background: wheat !important linear-gradient(to top, white,Wheat) !important;*/
+    width: 100%;
+}
+.far::after{
+    content:'';
+    margin-right:3px;
+}
+.card-header{
+    opacity: 0.9;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    background: linear-gradient(to left, white,Wheat) !important;
+}
+
+body,
+html{
+    background-image:url("../image/background.jpeg")
+}
+
+.nav{
+    background: wheat !important;
+    height: 75px;
+    border-bottom: 10px solid black !important;
+    text-align: center !important;
+}
+/* 
 .dropdown {
     margin-left: 87%;
     padding-top: 2%;
-}
-#heading {
+} */
+
+/* #heading {
     font-family: monospace;
     margin-top: 50%;
 }
-h1 {
+ */
+
+/* h1 {
     margin-top: 2%;
     text-align: center;
-}
+} */
 
 .input {
     font-family: monospace;
@@ -17,6 +77,8 @@ h1 {
     width: 98%;
     font-size: 100%;
 }
+
+
 #info {
     float: right;
     text-align: center;
@@ -27,6 +89,7 @@ h1 {
     border: 1px solid black;
     margin-top: 3%;
 }
+
 #article {
     float: right;
     text-align: center;
@@ -35,31 +98,18 @@ h1 {
     width: 60%;
     padding: 10px;
 }
-th {
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+.fixed-bottom {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 8%;
     text-align: center;
-    font-size: 18px;
-    color: white;
-    background-color: lightseagreen;
-    border: 3px solid #dddddd;
+
 }
-td, tr {
-    padding: 18px;
-    text-align: left; 
-    border: 3px solid #dddddd;
-}
-    .fixed-bottom {
-        position: fixed;
-        height: 100px;
-        bottom: 0;
-        width: 100%;
-        padding-bottom: 8%;
-        text-align: center;
-    
-  }
  
-  .portfolio:hover {
+.portfolio:hover {
     border: 3px solid lightseagreen;
     color : lightseagreen;
-  }
+}
