@@ -117,7 +117,7 @@ html{
     border: 3px solid lightseagreen;
     color : lightseagreen;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .membersDiv{
       font-size: 50%;
   }
