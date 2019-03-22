@@ -6,7 +6,7 @@ This app grabs articles from the New York Times using their API and sends the te
 Instructions:
 * Click on the "Get Aritcles" button to grab articles from The New York Times
 
-Click on the link to play!
+Click on the link to try it out!
 https://fizzymo.github.io/Number-1-Team/
 
 
