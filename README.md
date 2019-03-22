@@ -1,4 +1,4 @@
-# New York Time Trending News Editorial Approach
+# New York Times Editorial Approach
 This app grabs articles from the New York Times using their API and sends the text through the IBM Watson tone analyzer API to get the overall tone of the article. Our original idea was to be able to have the user filter articles based on their tone and have the news they want.
 
 ### Interface
