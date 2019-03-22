@@ -15,6 +15,7 @@ var config = {
   $('#add-article').on('click', function (event) {
  
     //console.log("add article clicked");
+    $(".cardContainer").empty();
     event.preventDefault;
     var url = "https://newsapi.org/v2/everything?domains=wsj.com,nytimes.com&apiKey=496e966f5c324e3080abd07b9111c5c3"
  
