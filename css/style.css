@@ -3,6 +3,7 @@
     /*background-image: url("../newspaper.jpeg") !important;
     background-repeat: no-repeat;
     background-size:cover;*/
+    font-family: 'Special Elite', cursive;
     opacity: 0.9;
     background-color:#00FFFF !important;
     background: wheat !important /* linear-gradient(to top, white, Wheat) !important;*/
@@ -53,6 +54,9 @@ html{
     height: 75px;
     border-bottom: 10px solid black !important;
     text-align: center !important;
+}
+.description-text{
+    line-height: 30px;
 }
 /* 
 .dropdown {
